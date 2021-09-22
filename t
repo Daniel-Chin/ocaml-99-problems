@@ -4,7 +4,7 @@ from subprocess import run, Popen, PIPE
 from time import sleep
 
 def main():
-    p = run(['ocamlopt', '-o', 'main', 'main.ml'])
+    # p = run(['ocamlopt', '-o', 'main', 'main.ml'])
 
     p = Popen('ocaml', stdin = PIPE)
     with open('test.ml', 'r') as f:
